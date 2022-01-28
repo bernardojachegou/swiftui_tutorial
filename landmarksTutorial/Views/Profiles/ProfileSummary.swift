@@ -18,22 +18,22 @@ struct ProfileSummary: View {
                     .bold()
                     .font(.title)
                 
-                Text("Notifications: \(profile.prefersNotifications ? "On": "Off" )")
-                Text("Seasonal Photos: \(profile.seasonalPhoto.rawValue)")
-                Text("Goal Date: ") + Text(profile.goalDate, style: .date)
+                Text("Notificações: \(profile.prefersNotifications ? "Ativado": "Desativado" )")
+                Text("Imagem sazonal: \(profile.seasonalPhoto.rawValue)")
+                Text("Data fim: ") + Text(profile.goalDate, style: .date)
                 
                 Divider()
                 
                 VStack(alignment: .leading) {
-                    Text("Completed Badges")
+                    Text("Conquistas")
                         .font(.headline)
                     
                     ScrollView(.horizontal) {
                         HStack {
-                            HikeBadge(name: "First Hike")
-                            HikeBadge(name: "Earth Day")
+                            HikeBadge(name: "Primeira Caminhada")
+                            HikeBadge(name: "Dia da Terra")
                                 .hueRotation(Angle(degrees: 90))
-                            HikeBadge(name: "Tenth Hike")
+                            HikeBadge(name: "Décima Caminhada")
                                 .grayscale(0.5)
                                 .hueRotation(Angle(degrees: 45))
                         }
@@ -44,7 +44,7 @@ struct ProfileSummary: View {
                 Divider()
                 
                 VStack(alignment: .leading) {
-                    Text("Recent Hikes")
+                    Text("Últimas caminhadas")
                         .font(.headline)
                     
                     HikeView(hike: modelData.hikes[0])

@@ -12,9 +12,9 @@ struct HikeDetail: View {
     @State var dataToShow = \Hike.Observation.elevation
 
     var buttons = [
-        ("Elevation", \Hike.Observation.elevation),
-        ("Heart Rate", \Hike.Observation.heartRate),
-        ("Pace", \Hike.Observation.pace)
+        ("Elevação", \Hike.Observation.elevation),
+        ("Batimentos", \Hike.Observation.heartRate),
+        ("Ritmo", \Hike.Observation.pace)
     ]
 
     var body: some View {

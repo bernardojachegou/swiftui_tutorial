@@ -19,19 +19,19 @@ struct ProfileEditor: View {
     var body: some View {
         List {
             HStack {
-                Text("Username").bold()
+                Text("Usuário").bold()
                 Divider()
                 TextField("Username", text: $profile.username)
             }
             
             Toggle(isOn: $profile.prefersNotifications) {
-                Text("Enable Notifications").bold()
+                Text("Notificações").bold()
             }
             
             VStack(alignment: .leading, spacing: 20) {
-                Text("Seasonal Photo").bold()
+                Text("Imagem sazonal").bold()
                 
-                Picker("Seasonal Photo", selection: $profile.seasonalPhoto) {
+                Picker("Imagem sazonal", selection: $profile.seasonalPhoto) {
                     ForEach(Profile.Season.allCases) { season in
                         Text(season.rawValue).tag(season)
                     }
@@ -39,9 +39,11 @@ struct ProfileEditor: View {
                 .pickerStyle(.segmented)
             }
             
-            DatePicker(selection: $profile.goalDate, in: dateRange, displayedComponents: .date) {
-                Text("Goal Date").bold()
+            DatePicker(selection: $profile.goalDate, in: dateRange, displayedComponents: .date)
+            {
+                Text("Data fim").bold()
             }
+            .environment(\.locale, Locale.init(identifier: "pt"))
         }
     }
 }
