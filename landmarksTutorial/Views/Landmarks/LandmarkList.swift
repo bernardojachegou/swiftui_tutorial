@@ -14,10 +14,10 @@ struct LandmarkList: View {
     @State private var selectedLandmark: Landmark?
     
     enum FilterCategory: String, CaseIterable, Identifiable {
-        case all = "All"
-        case lakes = "Lakes"
-        case rivers = "Rivers"
-        case mountains = "Mountains"
+        case all = "Todos"
+        case lakes = "Lagos"
+        case rivers = "Rios"
+        case mountains = "Montanhas"
         
         var id: FilterCategory { self }
     }
@@ -30,8 +30,8 @@ struct LandmarkList: View {
     }
     
     var title: String {
-        let title = filter == .all ? "Landmarks" : filter.rawValue
-        return showFavoritesOnly ? "Favorite \(title)" : title
+        let title = filter == .all ? "Marcos" : filter.rawValue
+        return showFavoritesOnly ? "\(title)" : title
     }
     
     var index: Int? {
@@ -63,7 +63,7 @@ struct LandmarkList: View {
                         .pickerStyle(.inline)
                         
                         Toggle(isOn: $showFavoritesOnly) {
-                            Label("Favorites only", systemImage: "star.fill")
+                            Label("Favoritos", systemImage: "star.fill")
                         }
                     } label: {
                         Label("Filter", systemImage: "slider.horizontal.3")

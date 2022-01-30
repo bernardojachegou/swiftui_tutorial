@@ -19,13 +19,13 @@ struct ContentView: View {
         TabView(selection: $selection) {
             CategoryHome()
                 .tabItem {
-                    Label("Featured", systemImage: "star")
+                    Label("Destaque", systemImage: "star")
                 }
                 .tag(Tab.featured)
 
             LandmarkList()
                 .tabItem {
-                    Label("List", systemImage: "list.bullet")
+                    Label("Lista", systemImage: "list.bullet")
                 }
                 .tag(Tab.list)
         }

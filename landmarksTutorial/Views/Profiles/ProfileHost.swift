@@ -12,17 +12,29 @@ struct ProfileHost: View {
     @EnvironmentObject var modelData: ModelData
     @State private var draftProfile = Profile.default
     
+    private var editButton: some View {
+        return Button {
+            if editMode?.wrappedValue == .inactive {
+                editMode?.wrappedValue = .active
+            } else {
+                editMode?.wrappedValue = .inactive
+            }
+        } label: {
+            Text(editMode?.wrappedValue == .inactive ? "Editar" : "Salvar")
+        }
+    }
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             HStack {
                 if editMode?.wrappedValue == .active {
-                    Button("Cancel", role: .cancel) {
+                    Button("Cancelar", role: .cancel) {
                         draftProfile = modelData.profile
                         editMode?.animation().wrappedValue = .inactive
                     }
                 }
                 Spacer()
-                EditButton()
+                editButton
             }
             if editMode?.wrappedValue == .inactive {
                 ProfileSummary(profile: modelData.profile)

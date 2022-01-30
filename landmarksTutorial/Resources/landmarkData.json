@@ -1,7 +1,7 @@
 [
     {
         "name": "Turtle Rock",
-        "category": "Rivers",
+        "category": "Rios",
         "city": "Twentynine Palms",
         "state": "California",
         "id": 1001,
@@ -17,7 +17,7 @@
     },
     {
         "name": "Silver Salmon Creek",
-        "category": "Lakes",
+        "category": "Lagos",
         "city": "Port Alsworth",
         "state": "Alaska",
         "id": 1002,
@@ -33,7 +33,7 @@
     },
     {
         "name": "Chilkoot Trail",
-        "category": "Mountains",
+        "category": "Montanhas",
         "city": "Skagway",
         "state": "Alaska",
         "id": 1003,
@@ -49,7 +49,7 @@
     },
     {
         "name": "St. Mary Lake",
-        "category": "Lakes",
+        "category": "Lagos",
         "city": "Browning",
         "state": "Montana",
         "id": 1004,
@@ -65,8 +65,8 @@
     },
     {
         "name": "Twin Lake",
-        "category": "Lakes",
-        "city": "Twin Lakes",
+        "category": "Lagos",
+        "city": "Twin lakes",
         "state": "Alaska",
         "id": 1005,
         "isFeatured": false,
@@ -81,7 +81,7 @@
     },
     {
         "name": "Lake McDonald",
-        "category": "Mountains",
+        "category": "Montanhas",
         "city": "West Glacier",
         "state": "Montana",
         "id": 1006,
@@ -97,7 +97,7 @@
     },
     {
         "name": "Charley Rivers",
-        "category": "Rivers",
+        "category": "Rios",
         "city": "Eaking",
         "state": "Alaska",
         "id": 1007,
@@ -113,7 +113,7 @@
     },
     {
         "name": "Icy Bay",
-        "category": "Mountains",
+        "category": "Montanhas",
         "city": "Icy Bay",
         "state": "Alaska",
         "id": 1008,
@@ -129,7 +129,7 @@
     },
     {
         "name": "Rainbow Lake",
-        "category": "Lakes",
+        "category": "Lagos",
         "city": "Willow",
         "state": "Alaska",
         "id": 1009,
@@ -145,7 +145,7 @@
     },
     {
         "name": "Hidden Lake",
-        "category": "Lakes",
+        "category": "Lagos",
         "city": "Newhalem",
         "state": "Washington",
         "id": 1010,
@@ -161,7 +161,7 @@
     },
     {
         "name": "Chincoteague",
-        "category": "Rivers",
+        "category": "Rios",
         "city": "Chincoteague",
         "state": "Virginia",
         "id": 1011,
@@ -177,7 +177,7 @@
     },
     {
         "name": "Lake Umbagog",
-        "category": "Lakes",
+        "category": "Lagos",
         "city": "Errol",
         "state": "New Hampshire",
         "id": 1012,

@@ -21,7 +21,6 @@ struct ProfileSummary: View {
                 Text("Notificações: \(profile.prefersNotifications ? "Ativado": "Desativado" )")
                 Text("Imagem sazonal: \(profile.seasonalPhoto.rawValue)")
                 Text("Data fim: ") + Text(profile.goalDate, style: .date)
-                
                 Divider()
                 
                 VStack(alignment: .leading) {
@@ -58,5 +57,6 @@ struct ProfileSummary_Previews: PreviewProvider {
     static var previews: some View {
         ProfileSummary(profile: Profile.default)
             .environmentObject(ModelData())
+            .environment(\.locale, Locale(identifier: "pt"))
     }
 }
